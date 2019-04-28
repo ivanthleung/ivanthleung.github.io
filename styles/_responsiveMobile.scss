@@ -1,0 +1,227 @@
+@media (max-width:479px) {
+
+    header {
+        height: 70rem;
+        background: url(../assets/hero_img_blk_btm_@mobile.jpg) top no-repeat;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+
+    footer {
+        p {
+            font-size: 1.3rem;
+        }
+    }
+
+    .topLine {
+        border-top: #e7600c solid 3px;
+    }
+
+    .wrapper {
+        width: 350px;
+        margin: 0 auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .wrapperFooter {
+        width: 350px;
+        margin: 0 auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .michaelSig {
+        width: 21rem;
+    }
+
+    .mouse {
+        // display: none;
+        top: 70rem;
+    }
+
+    .wvcLogo {
+        width: 160px;
+    }
+
+    .burgerLine {
+        width: 30px;
+        height: 4px;
+        background-color: #e7600c;
+        margin: 5px 0;
+    }
+
+    section.greatLove {
+        p {
+            width: inherit;
+        }
+    }
+    
+    .sectionARight img {
+        position: relative;
+        margin-top: 4rem;
+        margin-left: 0;
+        transform: scale(1);
+    }
+
+    p.mm {
+        margin-top: 0;
+    }
+
+    .sectionAleft {
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .impact {
+        margin-top: 8rem;
+    }
+
+    .worldMap {
+        height: 92rem;
+        background: url(../assets/WVC_Map_small_dots_@mobile.png) center no-repeat;
+        margin: 0 auto;
+        background-size: 100%;
+    }
+
+    .ftBoxA {
+        // border: solid pink 9px;
+        position: relative; 
+        top: 50px;
+    }
+    
+    .ftBoxB {
+        // border: solid pink 9px;
+        position: relative; 
+        top: 25px;
+    }
+    
+    .ftBoxC {
+        // border: solid pink 9px;
+        position: relative; 
+        top: 5px;
+    }
+
+    .floatTxtBox {
+        h2 {
+            transform: scale(1.4);
+            margin-bottom: 1.5rem;
+        }
+        p {
+            transform: scale(1.1);
+        }
+    }
+
+    .sectBCopyLeft {
+        width: inherit;
+        padding: 0;
+    }
+
+    .sectBCopyRight {
+        margin-top: 4rem;
+        img {
+            width: 479px;
+            margin-top: 2rem;
+        }
+    }
+
+   .statCover {
+       width: 100%;
+       margin-top: 10rem;
+       height: 74.7rem;
+   }
+
+   .statCoverDiv {
+       width: inherit;
+       height: inherit;
+       padding: 0;
+   }
+
+   .rightSideTint {
+       width: inherit;
+   }
+
+   .statSmallBox {
+       width: inherit;
+       flex-direction: column;
+       h1 {
+           text-align: center;
+           margin-top: 1rem;
+       }
+       p {
+           text-align: center;
+           margin-top: .5rem;
+       }
+   }
+
+   .statSmallBox :nth-child(1) {
+       order: 2;
+   }
+
+   .statSmallBox :nth-child(2) {
+        order: 1;
+    }
+
+   .statSmallBox :nth-child(3) {
+        order: 3;
+    }
+
+    // Section E
+
+    input[type=text] {
+        margin-bottom: 2rem;
+    }
+
+    input[type=email] {
+        width: 25.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .button {
+        width: 25.8rem;
+        margin-bottom: 4.8rem;
+    }
+
+    .socialMedia {
+        height: 80px;
+    }
+
+    // Section X: Footer
+
+    footer {
+        flex-direction: row;
+        height: 62.1rem;
+        padding: 0;
+        .thirdParty {
+            flex-shrink: 3;
+        }
+    }
+
+    .thirdParty img {
+        // transform: scale(.7);
+        width: 80px;
+        margin: .6rem;
+    }
+
+ 
+
+
+
+// Almost finish coding, just another 3hrs!
+
+}

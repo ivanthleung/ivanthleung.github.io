@@ -1,0 +1,484 @@
+@import "normalize";
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+}
+
+header {
+    height: 100vh;
+    background: url(../assets/hero_img_blk_btm.jpg) top no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2.6rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+footer {
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+.orangeText {
+    color: #e7600c;
+}
+
+.boldCopy {
+    font-weight: bold;
+}
+
+.lineBreak {
+    display: block;
+}
+
+.topLine {
+    border-top: #e7600c solid 6px;
+}
+
+.wrapper {
+    width: 1160px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.wrapperFooter {
+    width: 865px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+
+.michaelSig {
+    width: 26rem;
+}
+
+// Header: Nav Section
+
+// Scroll down mouse icon codepen
+
+.mouse {
+    width: 26px;
+    height: 42px;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  .mouse:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -2px;
+    background-color: #fff;
+    border-radius: 100%;
+    width: 4px;
+    height: 4px;
+    opacity: 1;
+    -webkit-transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
+    transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
+    -webkit-animation: scroll 1.5s -1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+    animation: scroll 1.5s -1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  }
+  
+  @-webkit-keyframes scroll {
+    0%, 20% {
+      -webkit-transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
+      transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
+    }
+    10% {
+      -webkit-transform: translateY(0px) scaleY(1.2) scaleX(1.2) translateZ(0px);
+      transform: translateY(0px) scaleY(1.2) scaleX(1.2) translateZ(0px);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateY(20px) scaleY(2.5) scaleX(0.5) translateZ(0px);
+      transform: translateY(20px) scaleY(2.5) scaleX(0.5) translateZ(0px);
+      opacity: 0.01;
+    }
+  }
+  @keyframes scroll {
+    0%, 20% {
+      -webkit-transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
+      transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
+    }
+    10% {
+      -webkit-transform: translateY(0px) scaleY(1.2) scaleX(1.2) translateZ(0px);
+      transform: translateY(0px) scaleY(1.2) scaleX(1.2) translateZ(0px);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateY(20px) scaleY(2.5) scaleX(0.5) translateZ(0px);
+      transform: translateY(20px) scaleY(2.5) scaleX(0.5) translateZ(0px);
+      opacity: 0.01;
+    }
+  }
+
+  // Scroll down mouse icon codepen
+
+
+.wvcLogo {
+    width: 21rem;
+}
+
+.nav {
+    display: flex; 
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    justify-content: space-between;
+}
+
+.burgerLine {
+    width: 35px;
+    height: 5px;
+    background-color: #e7600c;
+    margin: 6px 0;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+button:hover {
+    .burgerLine {
+        background-color: white;
+    }
+}
+
+// Nav CSS Start
+
+/* The Overlay (background) */
+    .overlay {
+        /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+        height: 100%;
+        width: 0;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0); /* Black fallback color */
+        background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+  
+    /* Position the content inside the overlay */
+    .overlay-content {
+        position: relative;
+        top: 25%; /* 25% from the top */
+        width: 100%; /* 100% width */
+        text-align: center; /* Centered text/links */
+        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
+  
+    /* The navigation links inside the overlay */
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block; /* Display block instead of inline */
+        transition: 0.3s; /* Transition effects on hover (color) */
+    }
+  
+    /* When you mouse over the navigation links, change their color */
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+  
+    /* Position the close button (top right corner) */
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+  
+    /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+    @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {font-size: 40px; top: 15px; right: 35px;}
+    }
+
+// Nav CSS End
+
+// Section A: Small Things with Great Love
+
+section.greatLove {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    p {
+        width: 54.6rem;
+    }
+}
+
+.sectionARight img {
+    position: absolute;
+    margin-left: -4rem;
+    transform: scale(.9);
+    margin-top: 15rem;
+}
+
+// Section B: Donation Impact
+
+.impact {
+    margin-top: 20rem;
+}
+
+.worldMap {
+    width: 100%;
+    height: 656px;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+    background: url(../assets/WVC_Map_small_dots.png) center no-repeat;
+    background-size: 110%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ftBoxA {
+    // border: solid pink 9px;
+    position: relative; 
+    top: 100px;
+}
+
+.ftBoxB {
+    // border: solid pink 9px;
+    position: relative; 
+    top: 330px;
+}
+
+.ftBoxC {
+    // border: solid pink 9px;
+    position: relative; 
+    top: 150px;
+}
+
+.floatTxtBox {
+    width: 232px;
+    height: 205px;
+    margin: 0 40px 0 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.3);
+    background-color: #e7600c;
+
+    // Poo! Chrome need support!
+    // backdrop-filter: blur(10px);  
+    // -webkit-backdrop-filter: blur(10px);
+
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    p {
+        // border: solid pink 1pt;
+        margin: 0 2.1rem 0 2.1rem;
+    }
+    h2 {
+        margin: 0 auto;
+    }
+}
+
+.sectBCopy {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectBCopyLeft {
+    width: 65%;
+    padding-right: 10rem;
+}
+
+// Section D: Stats Cover
+
+.statCover {
+    // border: solid 20px red;
+    margin-top: 20rem;
+    height: 69.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background: url(../assets/D485-0972-1012.jpg_929661.JPG) center no-repeat;
+    background-size: cover;
+}
+
+.statCoverDiv {
+    width: 43%;
+    height: 69.6rem;
+    background: rgba(black, 0.7);
+    padding-left: 2.8rem;
+}
+
+.rightSideTint {
+    // border: solid pink 1px;
+    height: 69.6rem;
+    width: 38.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.statSmallBox {
+    // border: solid red 1px;
+    width: 38.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    h1 {
+        margin: 0 auto;
+    }
+    img {
+        width: 7.9rem;
+        margin-right: .8rem;
+    }
+    p {
+        width: 28.7rem;
+    }
+}
+
+.statNumberBox {
+    width: 38.2rem;
+}
+
+// Section E: Thank you and Email
+
+.thankYou {
+    margin-top: 10rem;
+    padding-top: 10rem;
+    text-align: center;
+}
+
+form {
+    margin-top: 4.8rem;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+input[type=text] {
+    width: 25.8rem;
+    height: 4rem;
+    border-radius: .8rem;
+}
+
+input[type=email] {
+    width: 36.8rem;
+    height: 4rem;
+    border-radius: .8rem;
+}
+
+
+.button {
+    width: 15.9rem;
+    height: 4rem;
+    border-radius: .8rem;
+    font-size: 1.5rem;
+    color: white;
+    border: solid white 2px;
+    background-color: black;
+}
+
+::placeholder {
+    font-size: 1.5rem;
+}
+
+input {
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.socialMedia {
+    i {
+        // border: solid 1px pink;
+        font-size: 3.2rem;
+        color: white;
+        margin: 5rem 2.6rem;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+
+
+
+// Section X: Footer
+
+footer {
+    // margin: 0 auto;
+    margin-top: 20rem;
+    height: 52rem;
+    background-color: #d3d3d3;
+    p {
+        color: black;
+        text-align: center;
+    }
+    .thirdParty {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.wrapperFooter {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.thirdParty img {
+    width: 115px;
+    margin: 3rem;
+    text-align: center;
+}
+
+.bbbL {
+    // border: solid 20px pink;
+    transform: scale(0.6);
+}
+
+.councilCC {
+    // border: solid 20px pink;
+    transform: scale(0.8);
+}
+
+// Responsive Design with Media Queries
+@import "responsiveMobile";

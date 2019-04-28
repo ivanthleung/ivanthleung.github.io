@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<path class="st0" d="M36,67.05C18.88,67.05,4.95,53.12,4.95,36C4.95,18.88,18.88,4.95,36,4.95S67.05,18.88,67.05,36
+		C67.05,53.12,53.12,67.05,36,67.05z M36,7.45C20.26,7.45,7.45,20.26,7.45,36c0,15.74,12.81,28.55,28.55,28.55S64.55,51.74,64.55,36
+		C64.55,20.26,51.74,7.45,36,7.45z"/>
+	<g>
+		<defs>
+			<path id="SVGID_1_" d="M36,17.15c-2,8.7-11.3,19.3-11.3,26.3s4.5,11.4,11.3,11.4c6.8,0,11.3-4.4,11.3-11.4S38,25.85,36,17.15
+				L36,17.15L36,17.15z M36,52.85c-5.8,0-9.4-3.6-9.4-9.4c0-1.1,0.4-2.8,0.9-3.9c0.3-0.9,0.9-0.6,0.9,0.2c0.2,6.7,4.6,11,11.3,11
+				c0.6,0,1.2,0,1.7-0.1c0.4-0.1,0.6,0.5,0.3,0.7C40.2,52.35,38.3,52.85,36,52.85L36,52.85L36,52.85z M36,52.85"/>
+		</defs>
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;"/>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+	</g>
+</g>
+</svg>
