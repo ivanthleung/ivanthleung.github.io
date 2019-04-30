@@ -3,11 +3,11 @@
 <head>
     <meta charset='UTF-8'>
     <title>World Vision Canada | Thank You</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' href='styles/style.css'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel='stylesheet' href='styles/style.css'/>
 </head>
 <body>
  
@@ -97,24 +97,24 @@
                 
             <!-- I'm here! You know, the oranges boxes. -->
 
-                <div class="ftBoxA floatTxtBox" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-delay="20" data-aos-duration="600">
+                <div class="ftBoxA floatTxtBox" data-aos="zoom-in-right" data-aos-easing="ease-in-out" data-aos-delay="20" data-aos-duration="600">
                     <div>
-                        <h2>16,496</h2>
-                        <p>farmers learned techniques to improve crop and livestock production to better provide for their children and families</p>
+                        <h2>17,546</h2>
+                        <p>gas tanks were distributed to individuals and families living in emergency temporary shelters</p>
                     </div>
                 </div>
 
-                <div class="ftBoxB floatTxtBox" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="250" data-aos-duration="600">
+                <div class="ftBoxB floatTxtBox" data-aos="zoom-in-up" data-aos-easing="ease-in-out" data-aos-delay="250" data-aos-duration="600">
                     <div>
-                        <h2>70,180</h2>
-                        <p>individuals including children have safe water for drinking and cooking thanks to new or repaired water sources</p>
+                        <h2>44,752</h2>
+                        <p>farmers over half of them female – received livestock, seeds or tools to improve productivity and provision for their children and families</p>
                     </div>
                 </div>
 
-                <div class="ftBoxC floatTxtBox" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-duration="600">
+                <div class="ftBoxC floatTxtBox" data-aos="zoom-in-left" data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-duration="600">
                     <div>
-                        <h2>80,786</h2>
-                        <p>parents and caregivers learned about proper feeding practices and how to keep their children well nourished</p>
+                        <h2>6,820</h2>
+                        <p>metric tonnes of food were delivered to families affected by hunger in partnership with the World Food Programme</p>
                     </div>
                 </div>
 
@@ -214,7 +214,7 @@
 
                 <h1>More children are thriving, <span class="orangeText lineBreak">thanks to you</span></h1>
 
-                <h2>To learn more about our impact, visit: worldvision.ca/donorupdates <span class="lineBreak">or call customer care at 1-866-612-2224 for questions</span></h2>
+                <h2>To learn more about our impact, visit: worldvision.ca/donorupdates <span class="lineBreak">or call customer care at <a class="phoneNumber" href="tel:1-866-612-2224">1-866-612-2224</a> for questions</span></h2>
 
                 <div class="socialMedia">
                   
@@ -278,67 +278,14 @@
     </footer>
 
     <!-- Loading jQuery -->
+    <!-- <script src="styles/myScript.js"></script> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <script>
-    
-        $(function() {
+    <script src="styles/myScript.js"></script>
 
-            console.log('Good Day Sir!');
-
-
-            // Smooth Scroll
-            $("a").on('click', function(event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-                    // Store hash
-                    var hash = this.hash;
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function(){
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-
-
-            // AOS - Animate on scroll
-            AOS.init();
-
-        });
-        
-        // Nav - Side Slides
-
-        /* Open when someone clicks on the span element */
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
-
-        /* Close when someone clicks on the "x" symbol inside the overlay */
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
-
-        $( '.overlay-content a' ).on("click", function(){
-            document.getElementById("myNav").style.width = "0%";
-        });
-
-        
-    
-    
-    
-    
-    </script>
-
- 
+  
 </body>
 </html>
