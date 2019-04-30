@@ -61,7 +61,8 @@ footer {
 }
 
 .wrapper {
-    width: 1160px;
+    max-width: 1160px;
+    width: 95%;
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -382,6 +383,15 @@ section.greatLove {
     margin-top: 10rem;
     padding-top: 10rem;
     text-align: center;
+    a.phoneNumber {
+        // border: deeppink solid 2px;
+        text-decoration: none;
+        color: white;
+    }
+    a.phoneNumber:hover {
+        color: #e7600c;
+    }
+    
 }
 
 form {
